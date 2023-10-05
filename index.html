@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple form</title>
+</head>
+<body>
+    <form action="results.html" method="get" enctype="multipart/form-data">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="18" max="100">
+        </div>
+        <div>
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="date">DateofBirth</label>
+            <input type="date" name="date" id="date" min="2020-10-03" value="2000-01-00">
+        </div>
+        <div>
+            <label for="eyeColor">Eye Color</label>
+            <select name="eye-color" id="eyeColor" multiple>                
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="file">File</label>
+            <input type="file" id="file" name="file">
+        </div>
+
+        <div>
+            Gender
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+        </div>
+
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
